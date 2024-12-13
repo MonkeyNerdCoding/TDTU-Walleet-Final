@@ -1,8 +1,9 @@
 {
   "project_info": {
     "project_number": "566957990939",
+    "firebase_url": "https://login-fb9e5-default-rtdb.firebaseio.com",
     "project_id": "login-fb9e5",
-    "storage_bucket": "login-fb9e5.appspot.com"
+    "storage_bucket": "login-fb9e5.firebasestorage.app"
   },
   "client": [
     {

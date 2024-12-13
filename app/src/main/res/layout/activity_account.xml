@@ -23,7 +23,8 @@
             android:layout_marginHorizontal="20dp"
             android:layout_gravity="center"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView3"
