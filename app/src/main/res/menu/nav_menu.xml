@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view"
+    android:layout_gravity="start"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_infor"
+            android:icon="@drawable/account_infor"
+            android:title="Account"
+            />
+
+        <item
+            android:id="@+id/nav_cal"
+            android:icon="@drawable/nav_calculater"
+            android:title="Calculator"
+            />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/nav_news"
+            android:title="News"/>
+
+        <item
+            android:id="@+id/nav_goal"
+            android:icon="@drawable/nav_goal"
+            android:title="Goals"/>
+
+        <item
+            android:id="@+id/nav_debts"
+            android:icon="@drawable/nav_debts"
+            android:title="Debts"/>
+
+        <item
+            android:id="@+id/nav_currency"
+            android:icon="@drawable/nav_currecncy"
+            android:title="Currency"/>
+
+        <item
+            android:id="@+id/nav_theme"
+            android:icon="@drawable/nav_theme"
+            android:title="Theme"
+            />
+
+        <item
+            android:id="@+id/nav_language"
+            android:icon="@drawable/nav_language"
+            android:title="Language"
+            />
+
+        <item
+            android:id="@+id/nav_font_size"
+            android:icon="@drawable/nav_font_size"
+            android:title="Font size"
+            />
+
+        <item
+            android:id="@+id/nav_updates"
+            android:icon="@drawable/nav_update"
+            android:title="Updates"
+            />
+
+    </group>
+</menu>
