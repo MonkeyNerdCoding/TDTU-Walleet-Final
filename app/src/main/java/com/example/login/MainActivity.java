@@ -2,17 +2,18 @@ package com.example.login;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
-import androidx.activity.EdgeToEdge;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+
+
+import com.example.login.newsActivity.NewsActivity;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -102,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent calculatorIntent = new Intent(MainActivity.this, Calculator_activity.class);
                     startActivity(calculatorIntent);
                 } else if (id == R.id.nav_news) {
-                    Intent newsIntent = new Intent(MainActivity.this, activity_account.class);
+                    Intent newsIntent = new Intent(MainActivity.this, NewsActivity.class);
                     startActivity(newsIntent);
                 }
 
