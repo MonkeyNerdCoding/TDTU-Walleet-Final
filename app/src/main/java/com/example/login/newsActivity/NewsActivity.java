@@ -5,6 +5,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -54,7 +55,7 @@ public class NewsActivity extends AppCompatActivity {
         Call<NewsResponse> call = newsAPI.getNews(query, API_KEY);
         call.enqueue(new Callback<NewsResponse>() {
             @Override
-            public void onResponse(Call<NewsResponse> call, Response<NewsResponse> response) {
+            public void onResponse(@NonNull Call<NewsResponse> call, @NonNull Response<NewsResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     List<NewsResponse.Article> articles = response.body().articles;
                     if (articles.isEmpty()) {
@@ -68,7 +69,7 @@ public class NewsActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<NewsResponse> call, Throwable t) {
+            public void onFailure(@NonNull Call<NewsResponse> call, @NonNull Throwable t) {
                 Toast.makeText(NewsActivity.this, "Error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -81,6 +82,7 @@ public class NewsActivity extends AppCompatActivity {
 
         // Search functionality
         SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
+        assert searchView != null;
         searchView.setQueryHint("Search news...");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
